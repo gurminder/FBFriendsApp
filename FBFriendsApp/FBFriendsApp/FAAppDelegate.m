@@ -8,11 +8,21 @@
 
 #import "FAAppDelegate.h"
 
+#import <FacebookSDK/FacebookSDK.h>
+
 @implementation FAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.window.tintColor = APP_COLOR;
+    
+    [[UINavigationBar appearance] setBarTintColor:APP_COLOR];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    
     return YES;
 }
 							
@@ -41,6 +51,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    
+    [FBSession.activeSession close];
 }
 
 @end

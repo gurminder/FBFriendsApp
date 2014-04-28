@@ -21,6 +21,10 @@
 		ADEEB334190DD3C900A2DB0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEEB316190DD3C900A2DB0B /* UIKit.framework */; };
 		ADEEB33C190DD3C900A2DB0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADEEB33A190DD3C900A2DB0B /* InfoPlist.strings */; };
 		ADEEB33E190DD3C900A2DB0B /* FBFriendsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEB33D190DD3C900A2DB0B /* FBFriendsAppTests.m */; };
+		ADEEB350190DD70300A2DB0B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEEB34F190DD70300A2DB0B /* FacebookSDK.framework */; };
+		ADEEB353190DD7F100A2DB0B /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEB352190DD7F100A2DB0B /* UserTableViewCell.m */; };
+		ADEEB356190DD86700A2DB0B /* FAFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEB355190DD86700A2DB0B /* FAFriendsTableViewController.m */; };
+		ADEEB359190DD92100A2DB0B /* FAUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEEB358190DD92100A2DB0B /* FAUserDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		ADEEB339190DD3C900A2DB0B /* FBFriendsAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBFriendsAppTests-Info.plist"; sourceTree = "<group>"; };
 		ADEEB33B190DD3C900A2DB0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADEEB33D190DD3C900A2DB0B /* FBFriendsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBFriendsAppTests.m; sourceTree = "<group>"; };
+		ADEEB34F190DD70300A2DB0B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		ADEEB351190DD7F100A2DB0B /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		ADEEB352190DD7F100A2DB0B /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		ADEEB354190DD86700A2DB0B /* FAFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAFriendsTableViewController.h; sourceTree = "<group>"; };
+		ADEEB355190DD86700A2DB0B /* FAFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAFriendsTableViewController.m; sourceTree = "<group>"; };
+		ADEEB357190DD92100A2DB0B /* FAUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAUserDetailViewController.h; sourceTree = "<group>"; };
+		ADEEB358190DD92100A2DB0B /* FAUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAUserDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADEEB315190DD3C900A2DB0B /* CoreGraphics.framework in Frameworks */,
+				ADEEB350190DD70300A2DB0B /* FacebookSDK.framework in Frameworks */,
 				ADEEB317190DD3C900A2DB0B /* UIKit.framework in Frameworks */,
 				ADEEB313190DD3C900A2DB0B /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +113,7 @@
 		ADEEB311190DD3C900A2DB0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADEEB34F190DD70300A2DB0B /* FacebookSDK.framework */,
 				ADEEB312190DD3C900A2DB0B /* Foundation.framework */,
 				ADEEB314190DD3C900A2DB0B /* CoreGraphics.framework */,
 				ADEEB316190DD3C900A2DB0B /* UIKit.framework */,
@@ -119,6 +132,12 @@
 				ADEEB328190DD3C900A2DB0B /* FAViewController.m */,
 				ADEEB32A190DD3C900A2DB0B /* Images.xcassets */,
 				ADEEB319190DD3C900A2DB0B /* Supporting Files */,
+				ADEEB351190DD7F100A2DB0B /* UserTableViewCell.h */,
+				ADEEB352190DD7F100A2DB0B /* UserTableViewCell.m */,
+				ADEEB354190DD86700A2DB0B /* FAFriendsTableViewController.h */,
+				ADEEB355190DD86700A2DB0B /* FAFriendsTableViewController.m */,
+				ADEEB357190DD92100A2DB0B /* FAUserDetailViewController.h */,
+				ADEEB358190DD92100A2DB0B /* FAUserDetailViewController.m */,
 			);
 			path = FBFriendsApp;
 			sourceTree = "<group>";
@@ -250,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEEB353190DD7F100A2DB0B /* UserTableViewCell.m in Sources */,
+				ADEEB356190DD86700A2DB0B /* FAFriendsTableViewController.m in Sources */,
 				ADEEB31F190DD3C900A2DB0B /* main.m in Sources */,
+				ADEEB359190DD92100A2DB0B /* FAUserDetailViewController.m in Sources */,
 				ADEEB323190DD3C900A2DB0B /* FAAppDelegate.m in Sources */,
 				ADEEB329190DD3C900A2DB0B /* FAViewController.m in Sources */,
 			);
@@ -377,6 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Gurminder/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBFriendsApp/FBFriendsApp-Prefix.pch";
 				INFOPLIST_FILE = "FBFriendsApp/FBFriendsApp-Info.plist";
@@ -390,6 +416,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Gurminder/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBFriendsApp/FBFriendsApp-Prefix.pch";
 				INFOPLIST_FILE = "FBFriendsApp/FBFriendsApp-Info.plist";
@@ -457,6 +487,7 @@
 				ADEEB343190DD3C900A2DB0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADEEB344190DD3C900A2DB0B /* Build configuration list for PBXNativeTarget "FBFriendsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +496,7 @@
 				ADEEB346190DD3C900A2DB0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
